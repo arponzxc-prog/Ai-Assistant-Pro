@@ -235,7 +235,7 @@ class CommandExecutor(
                     "No Android Kotlin project found in Dev Studio workspace. Create or import an Android project first."
                 } else {
                     val validation = withContext(Dispatchers.IO) {
-                        com.arponzxc.novaai.devstudio.build.BuildAndRunEngine.validateProject(androidProj)
+                        com.arponzxc.novaai.devstudio.buildengine.BuildAndRunEngine.validateProject(androidProj)
                     }
                     val sharedCfg = com.arponzxc.novaai.devstudio.workspace.SharedWorkspaceBridge(ctx).getConfig()
                     val intent = com.arponzxc.novaai.devstudio.ui.DevStudioActivity.createLaunchIntent(
@@ -267,7 +267,7 @@ class CommandExecutor(
                     "No HTML website project found yet. Opening Dev Studio to create one."
                 } else {
                     val vr = withContext(Dispatchers.IO) {
-                        com.arponzxc.novaai.devstudio.build.BuildAndRunEngine.validateProject(webProj)
+                        com.arponzxc.novaai.devstudio.buildengine.BuildAndRunEngine.validateProject(webProj)
                     }
                     if (vr.isValid) {
                         "Validated '${webProj.name}' and starting local HTTP Live Preview server."
@@ -309,7 +309,7 @@ class CommandExecutor(
                     "No project in Dev Studio workspace to analyze."
                 } else {
                     val vr = withContext(Dispatchers.IO) {
-                        com.arponzxc.novaai.devstudio.build.BuildAndRunEngine.validateProject(proj)
+                        com.arponzxc.novaai.devstudio.buildengine.BuildAndRunEngine.validateProject(proj)
                     }
                     val lastErr = proj.lastErrorSummary?.let { " Last error: $it." }.orEmpty()
                     "Analyzed ${proj.name}: ${vr.summary}$lastErr"

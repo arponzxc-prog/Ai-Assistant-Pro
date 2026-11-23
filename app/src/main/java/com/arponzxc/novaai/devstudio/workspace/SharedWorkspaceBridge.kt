@@ -5,7 +5,7 @@ import android.content.Intent
 import android.net.Uri
 import android.provider.DocumentsContract
 import androidx.documentfile.provider.DocumentFile
-import com.arponzxc.novaai.devstudio.build.BuildAndRunEngine
+import com.arponzxc.novaai.devstudio.buildengine.BuildAndRunEngine
 import com.arponzxc.novaai.devstudio.model.ApkVerificationResult
 import com.arponzxc.novaai.devstudio.model.DevProject
 import com.arponzxc.novaai.devstudio.model.ProjectType

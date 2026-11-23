@@ -5,7 +5,7 @@ import android.net.Uri
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.arponzxc.novaai.devstudio.agent.AutonomousDevAgent
-import com.arponzxc.novaai.devstudio.build.BuildAndRunEngine
+import com.arponzxc.novaai.devstudio.buildengine.BuildAndRunEngine
 import com.arponzxc.novaai.devstudio.model.AgentStepLog
 import com.arponzxc.novaai.devstudio.model.ApkVerificationResult
 import com.arponzxc.novaai.devstudio.model.BuildErrorDiagnostic

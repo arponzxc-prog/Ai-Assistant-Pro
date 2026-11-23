@@ -3,7 +3,7 @@ package com.arponzxc.novaai.devstudio
 import android.os.Bundle
 import com.arponzxc.novaai.automation.command.CommandParser
 import com.arponzxc.novaai.automation.command.JarvisCommand
-import com.arponzxc.novaai.devstudio.build.BuildAndRunEngine
+import com.arponzxc.novaai.devstudio.buildengine.BuildAndRunEngine
 import com.arponzxc.novaai.devstudio.builder.AndroidProjectGenerator
 import com.arponzxc.novaai.devstudio.builder.WebProjectGenerator
 import com.arponzxc.novaai.devstudio.model.DetectedProjectType

@@ -72,7 +72,7 @@ class DevWorkspaceManager(private val baseFilesDir: File) {
         }
 
         val now = System.currentTimeMillis()
-        val hasWrapper = com.arponzxc.novaai.devstudio.build.BuildAndRunEngine.hasGradleWrapper(projectDir)
+        val hasWrapper = com.arponzxc.novaai.devstudio.buildengine.BuildAndRunEngine.hasGradleWrapper(projectDir)
         val project = DevProject(
             id = uniqueId,
             name = name.trim().ifBlank { "Untitled Project" },
